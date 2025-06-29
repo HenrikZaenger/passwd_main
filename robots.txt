@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://passwd.h12z.me/sitemap.xml
