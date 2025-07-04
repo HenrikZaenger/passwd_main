@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passwd - Your Password Manager</title>
+    <title>Passwd</title>
     <meta name="description" content="Passwd is a secure and modern password manager that helps you store and manage all your passwords in one secure place.">
     <meta name="keywords" content="password manager, secure passwords, password storage, cross-device sync, password generation">
     <meta name="author" content="Henrik Zänger">
@@ -14,38 +14,27 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Passwd - Your Password Manager">
     <meta name="twitter:description" content="Passwd is a secure and modern password manager that helps you store and manage all your passwords in one secure place.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Passwd</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="impressum.html">Impressum</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <section id="hero">
-            <h2>Securely Manage Your Passwords</h2>
-            <p>Passwd helps you store and manage all your passwords in one secure place.</p>
-            <a href="https://pass.zaenger.lu"><button>Get Started</button></a>
-        </section>
-        <section id="features">
-            <h3>Features</h3>
-            <ul>
-                <li>Strong Password Generation</li>
-                <li>Secure Storage</li>
-                <li>Cross-Device Sync</li>
-                <li>Easy Access</li>
-            </ul>
-        </section>
+        <div id="title">
+            <div id="titleOverlay"></div>
+            <p id="titleText">Passwd</p>
+        </div>
+        <p id="subtitle">Secure locally encrypted password storage</p>
+        <div onclick="openPass()" id="tryButton">
+            <p>Try</p>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2025 Henrik Zänger. All rights reserved.</p>
+        <p>&copy; 2025 Henrik Zänger. All rights reserved. <a href="impressum">Impressum</a></p>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        function openPass() {
+            window.location.href = "https://pass.zaenger.lu";
+        }
+    </script>
 </body>
 </html>
